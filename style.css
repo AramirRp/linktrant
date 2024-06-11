@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+.title {
+  margin-top: 1em;
+  text-align: center;
+  width: 81%;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  flex: auto;
+  margin-left: 1em;
+}
+
+.photo {
+  width: 13em;
+  height: 13em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+p {
+  flex-direction: column;
+  flex: auto;
+  width: 75%;
+  justify-content: center;
+  text-align: justify;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.links {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2em;
+  padding-bottom: 3em;
+}
+
+.button-55 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-55:focus {
+  text-decoration: none;
+}
+
+.button-55:hover {
+  text-decoration: none;
+}
+
+.button-55:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-55:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-55 {
+    padding: 12px 50px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+
+.linkedin {
+  width: 5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode.hero {
+  background-color: #444;
+}
+
+.dark-mode.title {
+  color: #fff;
+}
+
+.dark-mode.bio {
+  color: #fff;
+}
+
+.dark-mode.photo {
+  border: 1px solid #fff;
+}
+
+.dark-mode.links {
+  background-color: #444;
+}
+
+.dark-mode.button-55 {
+  background-color: #555;
+  border-color: #555;
+  color: #fff;
+}
+
+.dark-mode.button-55:hover {
+  background-color: #666;
+  border-color: #666;
+}
+
+.dark-mode.logo {
+  filter: invert(1);
+}
+
+.dark-mode.linkedin {
+  filter: invert(1);
+}
+
+
+.darkbtn{
+  flex: auto;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-left: 20em;
+  margin-top: .9em;
+}
+
+.switch {
+  --input-focus: #2d8cf0;
+  --bg-color: #111;
+  --bg-color-alt: #7e7e7e;
+  --main-color: #fefefe;
+  --input-out-of-focus: #111;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 70px;
+  height: 36px;
+  transform: translateX(calc(50% - 10px));
+}
+
+.toggle {
+  opacity: 0;
+}
+
+.slider {
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--input-out-of-focus);
+  transition: 0.3s;
+}
+
+.slider:before {
+  content: "off";
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 2px;
+  bottom: 1px;
+  border: 2px solid var(--main-color);
+  border-radius: 100px;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 25px;
+  transition: 0.3s;
+}
+
+.toggle:checked + .slider {
+  background-color: var(--input-focus);
+  transform: translateX(-32px);
+}
+
+.toggle:checked + .slider:before {
+  content: "on";
+  transform: translateX(32px);
+}
