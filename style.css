@@ -125,8 +125,13 @@ p {
   width: 5em;
 }
 
+.git{
+  width: 5em;
+}
+
 a {
   text-decoration: none;
+  color: white;
 }
 
 .dark-mode {
@@ -179,7 +184,8 @@ a {
   flex-direction: column;
   justify-content: end;
   align-items: end;
-  margin-left: 20em;
+  width: 100%;
+  margin-left: 1em;
   margin-top: .9em;
 }
 
@@ -194,9 +200,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  width: 70px;
-  height: 36px;
+  width: 4.4em;
+  height: 2em;
   transform: translateX(calc(50% - 10px));
 }
 
