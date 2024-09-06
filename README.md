@@ -1,0 +1,1 @@
+Little project of working on making a simili-clone to the landing page Linktree, using only Html, Js & CSS. The goal was not to create something particulary impressive, but more something like a training thing to me to work on stuff without using any framework
